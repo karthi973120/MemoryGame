@@ -1,13 +1,11 @@
 import * as React from 'react';
-import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 
 const Card = data => {
   const {
-    data: {value, toggle},
+    data: {value},
     flipcard,
   } = data;
-
-  const handlePress = () => {};
 
   return (
     <View style={styles.card}>
@@ -23,16 +21,15 @@ const styles = StyleSheet.create({
   card: {
     flexWrap: 'wrap',
     width: '20%',
-    margin: 8,
-    paddingVertical: 40,
-    aspectRatio: 1,
+    margin: '1.5%',
+    paddingVertical: 3,
   },
   card_body: {
     borderWidth: 3,
     borderRadius: 3,
     borderColor: '#000',
-    width: 70,
-    height: 70,
+    width: 85,
+    height: 85,
     padding: 10,
   },
   text: {
